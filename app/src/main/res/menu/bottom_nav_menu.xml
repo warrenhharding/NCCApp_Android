@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_alerts"
+        android:enabled="true"
+        android:icon="@drawable/alert"
+        android:title="Alerts"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_news"
+        android:enabled="true"
+        android:icon="@drawable/news"
+        android:title="MyNews"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_events"
+        android:enabled="true"
+        android:icon="@drawable/event"
+        android:title="Events"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_documents"
+        android:enabled="true"
+        android:icon="@drawable/document"
+        android:title="Documents"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_pa"
+        android:enabled="true"
+        android:icon="@drawable/parents"
+        android:title="PA News"
+        app:showAsAction="ifRoom|withText" />
+
+
+
+
+</menu>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:windowActionBar="false"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topOfScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.22"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/sunnyLogoSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topOfScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topOfScreen"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.58"/>
+
+
+    <FrameLayout
+        android:id="@+id/backFrameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/sunnyLogoSpace"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/sunnyLogoSpace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sunnyLogoSpace"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.15">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/backConstraintInsideFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<Button-->
+                <!--android:id="@+id/largeBackButton"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/backButton"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:cropToPadding="false"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:visibility="visible"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/backConstraintInsideFrame"-->
+                <!--app:layout_constraintEnd_toEndOf="@+id/backConstraintInsideFrame"-->
+                <!--app:layout_constraintStart_toStartOf="@+id/backConstraintInsideFrame"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/backConstraintInsideFrame"-->
+                <!--app:layout_constraintDimensionRatio="1:1"-->
+                <!--app:layout_constraintWidth_default="percent"-->
+                <!--app:layout_constraintWidth_percent="0.5"-->
+                <!--app:srcCompat="@drawable/leftarrowwhite" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topOfScreen"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9"
+        app:srcCompat="@drawable/ncclogo" />
+
+    <View
+        android:id="@+id/middleOfScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/emailString"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:text="@string/email_address"
+        android:textColor="@color/brandColor"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="@+id/userEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/middleOfScreen" />
+
+
+    <EditText
+        android:id="@+id/userEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12dp"
+        android:background="@drawable/roundededittext"
+        android:inputType="textWebEmailAddress"
+        android:drawablePadding="15dp"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.04"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailString"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:id="@+id/passwordString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:text="@string/user_password"
+        android:textColor="@color/brandColor"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="@+id/userPassword"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailAddress" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundededittext"
+        android:inputType="textPassword"
+        android:drawablePadding="15dp"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.04"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="@+id/userEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/userEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/passwordString"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.7" />
+
+
+    <Button
+        android:id="@+id/passwordForgotten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/forgotten"
+        android:textColor="@color/brandColor"
+        android:textSize="9dp"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/WhiteOnBrandButton"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/login_button"
+        app:fontFamily="@font/montserrat_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sunnyLogoSpace" />
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/qFrameLayout"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintDimensionRatio="1:1"-->
+        <!--app:layout_constraintWidth_default="percent"-->
+        <!--app:layout_constraintWidth_percent="0.15">-->
+
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:id="@+id/qConstraintInsideFrame"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/largeQButton"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/qmark"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_marginEnd="16dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:cropToPadding="true"-->
+                <!--android:gravity="center"-->
+                <!--android:scaleType="centerInside"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintDimensionRatio="1:1"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:layout_constraintWidth_default="percent"-->
+                <!--app:layout_constraintWidth_percent="0.75"-->
+                <!--app:srcCompat="@drawable/blueqonorange" />-->
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+    <!--</FrameLayout>-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "326452514924",
+    "firebase_url": "https://ncc-pa-app.firebaseio.com",
+    "project_id": "ncc-pa-app",
+    "storage_bucket": "ncc-pa-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326452514924:android:6d588ae040a9cd4e",
+        "android_client_info": {
+          "package_name": "com.salzburg101.nccapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326452514924-m1vqktmdi0karqjkcubemihl62g5d6ql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salzburg101.nccapp",
+            "certificate_hash": "9eb7de0697a4570fd654be243be95015a8aeb1e0"
+          }
+        },
+        {
+          "client_id": "326452514924-9tr3oth88uk6dm07159cg14egpc7c46a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD93-DcdKkIlc5d_lyVu8knfBWmd08Cx1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326452514924-9tr3oth88uk6dm07159cg14egpc7c46a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326452514924-9h1dir7a32gdfbhm2pm636peca1kpolm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.salzburg101.NCC-PA-App"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
